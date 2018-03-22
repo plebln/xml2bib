@@ -19,3 +19,16 @@ http://www.bibtex.org/Format/
 DataCite is ... the provider and maintainer of DataCite XML,
 a schema for metadata about digital objects.
 
+
+Using xml2bib
+-------------
+
+1. Standalone.
+
+	python xml2bib file1.xml [ file2.xml ... ]
+
+    e.g. python xml2bib.py xmlfiles/*  runs xml2bib on all the files listed on the command line.
+
+2. As a Python module. Load your XML, then call xml2dict, and the str() method of BibTeXWriter. [add example]
+
+

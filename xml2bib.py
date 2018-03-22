@@ -44,25 +44,27 @@ def xml2dict(x):
     """
 
     r = x.root
-    print(r.attrib)
+    #print('DEBUG', r.attrib)
 
     xmlfields = ('identifier', 'title', 'publisher',
                  'publicationYear', 'resourceType')
-    nsd = {'dc': 'http://datacite.org/schema/kernel-4'}
+    #nsd = {'dc': 'http://datacite.org/schema/kernel-4'}
+    ns = '{http://datacite.org/schema/kernel-4}'
 
     dc = dict.fromkeys(xmlfields)
     for field in xmlfields:
-        for n in r.findall('dc:' + field, nsd):
+        #for n in r.findall('dc:' + field, nsd):
+        for n in r.iter(ns + field):
             if n is not None:
                 v = n.text
-                print('found', field, v)
+                #print('Found', field, v)
                 dc[field] = v
 
         #for n in r.findall(field):
         #    print('found', field)
         #    dc[field] = n.text
 
-    print(dc)
+    #print('DEBUG dc=', dc)
 
     d = dict()
     d['authors'] = 'Abbott, A and Costello, C'
