@@ -10,7 +10,7 @@ class TestBibTeXWrite(unittest.TestCase):
 
     def test_empty(self):
         w = xml2bib.BibTeXWriter('', dict())
-        x = w.str()
+        x = str(w)
         self.assertTrue(len(x) > 0)
 
     def test_basic(self):
@@ -19,7 +19,7 @@ class TestBibTeXWrite(unittest.TestCase):
              'title': 'The photo-electric effect',
              'journal': 'Phys. Rev.'}
         w = xml2bib.BibTeXWriter('AE05', d)
-        x = w.str()
+        x = str(w)
         self.assertTrue(len(x) > 0)
         if (self.verbose):
             print('testBasic:', x)
