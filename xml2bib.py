@@ -21,11 +21,11 @@ class BibTeXWriter():
         lines = []
         for k in sorted(self.data):
             v = self.data[k]
-            if isinstance(v, int):
-                value = int(v)
-            elif v is None:
+            if v is None:
                 continue
-            else:
+            try:
+                value = int(v)
+            except ValueError:
                 value = '{' + str(v) + '}'
             lines.append('  {} = {}'.format(k, str(value)))
         return '@{0}{{{1},\n'.format(self.entry_type, self.tag,) + \
@@ -46,15 +46,17 @@ def xml2dict(x):
     r = x.root
     print(r.attrib)
 
-    xmlfields = ('identifier', 'title', 'publisher', 'publicationYear', 'resourceType')
+    xmlfields = ('identifier', 'title', 'publisher',
+                 'publicationYear', 'resourceType')
+    nsd = {'dc': 'http://datacite.org/schema/kernel-4'}
 
     dc = dict.fromkeys(xmlfields)
     for field in xmlfields:
-        n = r.find(field)
-        if n is not None:
-            v = n.text
-            print('found', field, n.text)
-            dc[field] = n.text
+        for n in r.findall('dc:' + field, nsd):
+            if n is not None:
+                v = n.text
+                print('found', field, v)
+                dc[field] = v
 
         #for n in r.findall(field):
         #    print('found', field)
