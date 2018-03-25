@@ -46,7 +46,7 @@ def xml2dict(x):
     r = x.root
     #print('DEBUG', r.attrib)
 
-    xmlfields = ('identifier', 'title', 'publisher',
+    xmlfields = ('creator', 'identifier', 'title', 'publisher',
                  'publicationYear', 'resourceType')
     #nsd = {'dc': 'http://datacite.org/schema/kernel-4'}
     ns = '{http://datacite.org/schema/kernel-4}'
@@ -55,32 +55,29 @@ def xml2dict(x):
     for field in xmlfields:
         #for n in r.findall('dc:' + field, nsd):
         for n in r.iter(ns + field):
+            v = n.text
+            if field == 'creator':
+                v = n.find(ns + 'creatorName').text
+            #print('Found', field, v)
             if n is not None:
-                v = n.text
-                #print('Found', field, v)
-                dc[field] = v
-
-        #for n in r.findall(field):
-        #    print('found', field)
-        #    dc[field] = n.text
+                if dc[field] is None:
+                    dc[field] = v
+                else:
+                    dc[field] = dc[field] + ' and ' + v
 
     #print('DEBUG dc=', dc)
 
     d = dict()
-    d['authors'] = 'Abbott, A and Costello, C'
-    dc_to_bib = {'year': 'publicationYear',
+    dc_to_bib = {'author': 'creator',
+                 'year': 'publicationYear',
                  'DOI': 'identifier',
+                 'howpublished': 'resourceType',
                  'publisher': 'publisher',
                  'title': 'title',
-                 'howpublished': 'resourceType',
                  }
 
     for x in dc_to_bib:
         d[x] = dc[dc_to_bib[x]]
-#    d['year'] = dc['publicationYear']
-#    d['title'] = dc['title']
-#    d['DOI'] = dc['identifier']
-#    d['publisher'] = dc['publisher']
     return d
 
 if __name__ == '__main__':
@@ -91,5 +88,3 @@ if __name__ == '__main__':
         y = xml2dict(x)
         print(str(BibTeXWriter('ref%i' % (k,), y)))
         print()
-
-

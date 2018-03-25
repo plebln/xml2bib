@@ -24,5 +24,21 @@ class TestBibTeXWrite(unittest.TestCase):
         if (self.verbose):
             print('testBasic:', x)
 
+
+class TestXMLReader(unittest.TestCase):
+    def test_one(self):
+        f = 'xmlfiles/_10.14470_6t569239.xml'
+        x = xml2bib.XMLReader(f)
+        d = xml2bib.xml2dict(x)
+
+        c_names = ('Th, H.',
+                   'Ba, N.',
+                   'Ma, V.',
+                   'Ri, J.',
+                   'Ti, F.',)
+        c = ' and '.join(c_names)
+        self.assertEqual(d['author'], c)
+
+
 if __name__ == '__main__':
     unittest.main()
