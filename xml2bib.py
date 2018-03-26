@@ -34,7 +34,11 @@ class BibTeXWriter():
 
 class XMLReader():
     def __init__(self, filename):
-        tree = ET.parse(filename)
+        try:
+            tree = ET.parse(filename)
+        except ET.ParseError:
+            print('ParseError while processing', filename, file=sys.stderr)
+            raise
         self.root = tree.getroot()
 
 
