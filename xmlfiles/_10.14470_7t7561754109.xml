@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+  <identifier identifierType="DOI">10.14470/7T7561754109</identifier>
+  <creators>
+    <creator>
+      <creatorName>Walter, Thomas</creatorName>
+      <givenName>Thomas</givenName>
+      <familyName>Walter</familyName>
+    </creator>
+    <creator>
+      <creatorName>Gaete, Ayleen</creatorName>
+      <givenName>Ayleen</givenName>
+      <familyName>Gaete</familyName>
+    </creator>
+    <creator>
+      <creatorName>Lara, Luis</creatorName>
+      <givenName>Luis</givenName>
+      <familyName>Lara</familyName>
+    </creator>
+    <creator>
+      <creatorName>Mikulla, Stefan</creatorName>
+      <givenName>Stefan</givenName>
+      <familyName>Mikulla</familyName>
+    </creator>
+    <creator>
+      <creatorName>Kujawa, Christian</creatorName>
+      <givenName>Christian</givenName>
+      <familyName>Kujawa</familyName>
+    </creator>
+    <creator>
+      <creatorName>Zimmer, Martin</creatorName>
+      <givenName>Martin</givenName>
+      <familyName>Zimmer</familyName>
+    </creator>
+    <creator>
+      <creatorName>Allahbakshi, Masoud</creatorName>
+      <givenName>Masoud</givenName>
+      <familyName>Allahbakshi</familyName>
+    </creator>
+  </creators>
+  <titles>
+    <title>Lastarria volcano experiment</title>
+  </titles>
+  <publisher>Deutsches GeoForschungsZentrum GFZ</publisher>
+  <publicationYear>0</publicationYear>
+  <resourceType resourceTypeGeneral="Other">Seismic Network</resourceType>
+  <subjects>
+    <subject>Broadband seismic waveforms</subject>
+    <subject>Seismic monitoring</subject>
+    <subject subject_scheme="GEMET - INSPIRE themes, version 1.0" scheme_uri="" text="Monitoring system"/>
+    <subject subject_scheme="Library of Congress Subject Headings" scheme_uri="http://id.loc.gov/authorities/subjects" text="Seismological stations"/>
+  </subjects>
+  <dates>
+    <date dateType="Created">2017-03-17</date>
+    <date dateType="Issued">?</date>
+  </dates>
+  <version/>
+  <descriptions>
+    <description descriptionType="Abstract">The network consistes in 6 stations surronding the fumarole field at Lastarria volcano. These stations were operative during one month with the final purpose of detect changes in the hydrothermal system triggered by passing of seismic waves produced by artificial explosions. Waveform data are available from the GEOFON data centre, under network code 2G, and are embargoed until 001 2019.</description>
+  </descriptions>
+</resource>

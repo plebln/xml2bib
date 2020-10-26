@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+  <identifier identifierType="DOI">10.14470/1P7568352842</identifier>
+  <creators>
+    <creator>
+      <creatorName>Schurr, Bernd</creatorName>
+      <givenName>Bernd</givenName>
+      <familyName>Schurr</familyName>
+    </creator>
+    <creator>
+      <creatorName>Yuan, Xiaohui</creatorName>
+      <givenName>Xiaohui</givenName>
+      <familyName>Yuan</familyName>
+    </creator>
+    <creator>
+      <creatorName>Haberland, Christian</creatorName>
+      <givenName>Christian</givenName>
+      <familyName>Haberland</familyName>
+    </creator>
+    <creator>
+      <creatorName>Mechie, James</creatorName>
+      <givenName>James</givenName>
+      <familyName>Mechie</familyName>
+    </creator>
+    <creator>
+      <creatorName>Kufner, Sofia-Katerina</creatorName>
+      <givenName>Sofia-Katerina</givenName>
+      <familyName>Kufner</familyName>
+    </creator>
+  </creators>
+  <titles>
+    <title>TIPTIMON (Tien Shan-Pamir Monitoring Program) AFGHANISTAN (2013/2014)</title>
+  </titles>
+  <publisher>Deutsches GeoForschungsZentrum GFZ</publisher>
+  <publicationYear>0</publicationYear>
+  <resourceType resourceTypeGeneral="Other">Seismic Network</resourceType>
+  <subjects>
+    <subject>Broadband seismic waveforms</subject>
+    <subject>Seismic monitoring</subject>
+    <subject subject_scheme="GEMET - INSPIRE themes, version 1.0" scheme_uri="" text="Monitoring system"/>
+    <subject subject_scheme="Library of Congress Subject Headings" scheme_uri="http://id.loc.gov/authorities/subjects" text="Seismological stations"/>
+  </subjects>
+  <dates>
+    <date dateType="Created">2015-07-08</date>
+    <date dateType="Issued">?</date>
+  </dates>
+  <version/>
+  <descriptions>
+    <description descriptionType="Abstract">The TIPTIMON seismic deployment in Afghanistan aimed to study the seismotectonics of the Hindu Kush and the Tajik-Afghan basin. Within this network 8 seismic stations were deployed between 2013 to 2014 to study shallow and intermediate depth seismicity. TIPTIMON (Tien Shan-Pamir Monitoring) is a research programme funded by the German Federal Ministry of Education and Research (BMBF) within the CAME Programme (Central Asia - Monsoon dynamics and Geo-ecosystems). All stations were equipped with MARK L-4C-3D geophones and DSS CUBE recorders, continuously  recording with 100 samples per second. Waveform data is available from the GEOFON data centre, under network code 6C, and is embargoed until Oct 2018.</description>
+  </descriptions>
+</resource>

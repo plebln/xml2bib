@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+  <identifier identifierType="DOI">10.14470/8U7554472182</identifier>
+  <creators>
+    <creator>
+      <creatorName>Pilz, Marco</creatorName>
+      <givenName>Marco</givenName>
+      <familyName>Pilz</familyName>
+    </creator>
+    <creator>
+      <creatorName>Parolai, Stefano</creatorName>
+      <givenName>Stefano</givenName>
+      <familyName>Parolai</familyName>
+    </creator>
+  </creators>
+  <titles>
+    <title>Norcia basin (Italy) temporary seismic network</title>
+  </titles>
+  <publisher>GFZ Data Services</publisher>
+  <publicationYear>2009</publicationYear>
+  <resourceType resourceTypeGeneral="Other">Seismic Network</resourceType>
+  <subjects>
+    <subject>Seismic waveforms</subject>
+  </subjects>
+  <fundingReferences>
+    <fundingReference>
+      <funderName>Deutsche Forschungsgemeinschaft (DFG)</funderName>
+    </fundingReference>
+  </fundingReferences>
+  <dates>
+    <date dateType="Created">2017-04-06</date>
+    <date dateType="Issued">2009</date>
+  </dates>
+  <version/>
+  <descriptions>
+    <description descriptionType="Abstract">A temporary local seismic network was installed in the basin of Norcia (Italy) in January 2009 and operated until May 2009. Several recordings collected by the network are earthquakes of the 2009, Mw 6.3 L'Aquila seismic sequence. The seismic equipments consisted of fifteen Earth-Data Loggers (24 bit) connected to Mark L4-3D sensors (1Hz). The stations continuously recorded at a rate of 100 samples per second, and the timing was provided by a GPS link. Waveform data are available from the GEOFON data centre.</description>
+  </descriptions>
+</resource>

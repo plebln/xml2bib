@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+  <identifier identifierType="DOI">10.14470/8U7561563769</identifier>
+  <creators>
+    <creator>
+      <creatorName>Larose, Eric</creatorName>
+      <givenName>Eric</givenName>
+      <familyName>Larose</familyName>
+    </creator>
+  </creators>
+  <titles>
+    <title>Renland</title>
+  </titles>
+  <publisher>GFZ Data Services</publisher>
+  <publicationYear>2016</publicationYear>
+  <resourceType resourceTypeGeneral="Other">Seismic Network</resourceType>
+  <subjects>
+    <subject>Seismic waveforms</subject>
+  </subjects>
+  <fundingReferences>
+    <fundingReference>
+      <funderName>Naturevolution</funderName>
+    </fundingReference>
+  </fundingReferences>
+  <dates>
+    <date dateType="Created">2017-04-06</date>
+    <date dateType="Issued">2016</date>
+  </dates>
+  <version/>
+  <descriptions>
+    <description descriptionType="Abstract">The experiments are performed down the Edward Bailey valley, in the Renland peninsula, Scoresby Sund, Greenland. General purpose: ambient seismic noise recordings are obtained to characterize the geometry/structure of the valley the geometry/structure of the glaciers the microseismicity of the glacier, the friction process, crack orientation and mechanisms the seismic activity of glacial rivers, the relation between hydrological flow and noise spectrum  the localization and characterization of sub-glacial flow from surface recordings. Seismic stations were composed of 3C broadband Trillium compact seismometer, a Cube datalogger and a 12V (D-cell types, stacked) battery pack.The experiment splits into three surveys performed at three different sites, one after the other, from july to august 2016. In the first experiment, we deploy 11 stations, 9 of them on a flat sandy area covering, partly, immobile ice that seems to be blocked between the Bailey Glacier (upstream) and the Apusinikajik glacier (downstream). The 9 sensors are placed a few hundreds of meters from the Apusinikajik lateral front, the last 2 are placed on the glacier next to the collapsing front. In the second and third experiment (chronologically speaking), we deploy 10 and 8 stations, respectively. Each deployment is performed along a Bailey valley transect. The first one intercepts the front-end of the glacier and the sub-glacial river exit (flow of several m3/s). The second transect is performed some 850m upstream. Waveform data are available from the GEOFON data centre, under network code 3H, and are embargoed until summer of 2019.</description>
+  </descriptions>
+</resource>
